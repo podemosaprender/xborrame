@@ -1,2 +1,401 @@
-Hola!
-Anda?
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="./favicon.png" />
+		<title>Base de conocimiento</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Emoji:wght@300..700&display=swap" rel="stylesheet">
+		<link href="./assets/css/bootstrap.css" rel="stylesheet">
+		<link href="./assets/css/activeform.min.css" rel="stylesheet">
+		<link href="./assets/css/typeahead.min.css" rel="stylesheet">
+		<link href="./assets/css/typeahead-kv.min.css" rel="stylesheet">
+		<link href="./assets/css/kv-widgets.min.css" rel="stylesheet">
+		<link href="./assets/css/site.css" rel="stylesheet">
+		<script src="./data/datajsonp.js"></script>
+		<script src="./js/data.js"></script>
+		<script type="text/javascript">window.typeahead_e325ca8b = {"highlight":true,"minLength":3};</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<nav id="w0" class="navbar-inverse navbar-fixed-top custom-navbar navbar"><div class="container-fluid">
+					<div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w0-collapse"><span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">
+							<img src="./img/logo_Flacso.png" class="logo-flacso"/>
+							<img src="./img/logo_unicef.png"/>
+							<img src="./img/logo_agencia_i_d_i.png"/>
+						</a></div>
+						<div id="w0-collapse" class="collapse navbar-collapse"><ul id="w1" class="navbar-nav navbar-right nav">
+								<li class="showLoadingMenuItem active"><a href="./">Inicio</a></li>
+								<li class="showLoadingMenuItem"><a href="./site/acercade">Acerca de</a></li>
+								<li class="showLoadingMenuItem"><a href="./actualizarinformacion/crear">Actualizar información</a></li>
+								<li class="showLoadingMenuItem"><a href="./preguntasfrecuentes/">Preguntas frecuentes</a></li>
+								<li><a href="https://www.ecys.flacso.org.ar/ries" target="_blank">Sitio RIES</a></li>
+								<li class="showLoadingMenuItem"><a href="./site/contacto">Contacto</a></li>
+							</ul></div>
+				</div>
+			</nav>
+			<div id="page" class="container-fluid">
+				<div class="row container-inicio-titulo">
+					<div class="col-md-8">
+						<h1 class="inicio-titulo">Base de Producción de Conocimiento<br />
+							sobre Educación Secundaria en Argentina </h1>
+					</div>
+					<div class="col-md-4">
+						<a target="_blank" href="https://ecys.flacso.org.ar" class="banner-link">
+							<div class="banner-container">
+								Este sitio forma parte del programa
+								<img src="./img/logo-ecys.png" alt="logo-ecys" />
+								<br>
+								<div class="btn-banner">SABER MÁS</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<br/>
+				<br/>
+				<br/>
+
+				<div class="row buscador-con-sugerencias-container">
+					<div class="col-xs-12 col-md-offset-3 col-md-6">
+
+						<form id="buscador-avanzado" class="form-vertical" action="./site/busquedaavanzada" method="GET">            
+							<div class="form-group field-buscador-query">
+
+								<div class="input-group"><div><input type="text" id="buscador-query" class="buscador-sugerencia form-control" name="Buscador[query]" placeholder="Ingrese su búsqueda" data-krajee-typeahead="typeahead_e325ca8b"></div><span class="input-group-btn"><button type="submit" class="btn btn-primary showLoading"><i class="glyphicon glyphicon-search"></i></button></span></div>
+
+								<div class="help-block"></div>
+							</div>            </form>
+
+							<p class="text-right busqueda-avanzada">
+							<strong>
+								<a class="showLoading" href="./site/busquedaavanzada?open=true">Búsqueda
+									avanzada</a>
+							</strong>
+							</p>
+
+
+							<div class="container-buscador-tematico">
+								<a id="mostrar-buscador-tematico" class="custom-collapse collapsed" data-toggle="collapse"
+																																										data-target="#buscador-tematico">
+									<h1 class="titulo con-lineas">
+										Buscador temático
+										<img class="icono-expand pull-right" src="./img/ico_mas.png"
+																												 alt="expandir">
+									</h1>
+								</a>
+							</div>
+							<div id="buscador-tematico" class="collapse">
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=7">
+									<p class="busqueda-tema-item">Cuerpo, género, sexualidad (144)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=8">
+									<p class="busqueda-tema-item">Educación no formal, Educación Popular, movimientos sociales (63)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=2">
+									<p class="busqueda-tema-item">Educación y desigualdad (740)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=4">
+									<p class="busqueda-tema-item">Enseñanza y aprendizaje y curriculum (986)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=10">
+									<p class="busqueda-tema-item">Evaluación (97)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=9">
+									<p class="busqueda-tema-item">Historia de la educación (86)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=11">
+									<p class="busqueda-tema-item">Institución y gestión escolar (381)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=13">
+									<p class="busqueda-tema-item">Modalidades (265)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=1">
+									<p class="busqueda-tema-item">Políticas educativas (1031)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=6">
+									<p class="busqueda-tema-item">Profesores (349)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=3">
+									<p class="busqueda-tema-item">Representaciones sobre la escuela (353)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=12">
+									<p class="busqueda-tema-item">Salud y escuela (43)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=32">
+									<p class="busqueda-tema-item">Tecnologías de la Información y la Comunicación (TIC) (223)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=5">
+									<p class="busqueda-tema-item">Trayectorias educativas, transiciones entre niveles. Orientación escolar (447)</p>
+								</a>
+								<br/>
+								<a class="showLoading"
+									 href="./site/busquedaavanzada?Buscador%5Bclasificacion%5D%5B%5D=31">
+									<p class="busqueda-tema-item">Vínculos y convivencia escolar (297)</p>
+								</a>
+								<br/>
+							</div>
+
+
+							<div class="container-productos-recientes" style="margin-top: 2em; border-bottom: 1px solid #648bb4;">
+								<a id="mostrar-recientes" class="custom-collapse collapsed" data-toggle="collapse"
+																																						data-target="#recientes">
+									<h1 class="titulo con-lineas">
+										Nuevas incorporaciones 
+										<img class="icono-expand pull-right" src="./img/ico_mas.png"
+																												 alt="expandir">
+									</h1>
+								</a>
+							</div>
+							<div id="recientes" class="collapse">
+								<br/>
+								<ul>
+									<li>
+										<a href="./proyectos/index/1850?tab=28">
+											12/04/24 
+											Informe de resultados. Encuesta a equipos directivos de escuelas secundarias: segundo relevamiento, Ciclos lectivos : Cierre 2020- Inicio 2021                      </a>
+									</li>
+									<li>
+										<a href="./proyectos/index/1850?tab=27">
+											12/04/24 
+											Uso de índices, fuentes secundarias y encuestas de gran alcance para el estudio de las desigualdades sociales y educativas                      </a>
+									</li>
+									<li>
+										<a href="./proyectos/index/1850?tab=26">
+											12/04/24 
+											Contexto de transmisión, una aproximación conceptual a las alteraciones de la escolarización a partir de la pandemia                      </a>
+									</li>
+									<li>
+										<a href="./proyectos/index/1850?tab=25">
+											12/04/24 
+											La normativa educativa en pandemia: entre la urgencia de reglamentación y la necesidad de innovación. El caso de la secundaria técnico-profesional                      </a>
+									</li>
+									<li>
+										<a href="./proyectos/index/1850?tab=24">
+											12/04/24 
+											La educación secundaria técnica en pandemia en Argentina. El desafío de sostener el espacio de las prácticas                      </a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="container-ries" style="margin-top: 2em; border-bottom: 1px solid #648bb4;">
+								<a id="mostrar-ries" class="custom-collapse collapsed" data-toggle="collapse"
+																																			 data-target="#ries">
+									<h1 class="titulo con-lineas">
+										Proyectos y Publicaciones RIES 
+										<img class="icono-expand pull-right" src="./img/ico_mas.png"
+																												 alt="expandir">
+									</h1>
+								</a>
+							</div>
+							<div id="ries" class="collapse">
+								<br/>
+								<ul>
+									<li>
+										<a href="./proyectos/index/1850?tab=27">
+											Uso de índices, fuentes secundarias y encuestas de gran alcance para el estudio de las desigualdades sociales y educativas                      </a>
+									</li>
+									<li>
+										<a href="./proyectos/index/1850?tab=26">
+											Contexto de transmisión, una aproximación conceptual a las alteraciones de la escolarización a partir de la pandemia                      </a>
+									</li>
+									<li>
+										<a href="./proyectos/index/1850?tab=25">
+											La normativa educativa en pandemia: entre la urgencia de reglamentación y la necesidad de innovación. El caso de la secundaria técnico-profesional                      </a>
+									</li>
+									<li>
+										<a href="./proyectos/index/1850?tab=24">
+											La educación secundaria técnica en pandemia en Argentina. El desafío de sostener el espacio de las prácticas                      </a>
+									</li>
+									<li>
+										<a href="./proyectos/index/1850?tab=23">
+											¿Cómo se llevaron a cabo las Prácticas Profesionalizantes en las escuelas técnicas durante la pandemia? Análisis de los sucedido en dos jurisdicciones de Argentina                      </a>
+									</li>
+									<li>
+										<a href="./proyectos/index/1850">
+											La reconfiguración de las desigualdades vinculadas a la educación secundaria argentina en situación de pandemia/postpandemia                      </a>
+									</li>
+									<li>
+										<a href="./proyectos/index/1591">
+											El Régimen Académico como llave del cambio a la organización institucional de la escuela secundaria: análisis de las normativas y de la implementación en algunas jurisdicciones durante los últimos años                      </a>
+									</li>
+									<li>
+										<a href="./proyectos/index/1583">
+											Programa RIES: Producción de conocimiento sobre Educación Secundaria en la Argentina                      </a>
+									</li>
+								</ul>
+								<p class="text-right busqueda-avanzada">
+								<strong>
+									<a class="showLoading" href="./site/busquedaavanzada?Buscador%5Besries%5D=1&amp;Buscador%5Besriesproy%5D=1">Más</a>
+								</strong>
+								</p>
+
+							</div>
+
+
+
+
+					</div>
+				</div>
+				<br/>
+
+			</div>
+
+			<div id="loader"></div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="pull-left">
+				<img src="./img/logo_Flacso.png"/>
+				<img src="./img/logo_unicef.png"/>
+				<img src="./img/logo_agencia_i_d_i.png"/>
+				<small>2016-2024 Todos los derechos reservados.</small>
+				</p>
+			</div>
+		</footer>
+
+		<script src="./assets/js/jquery.js"></script>
+		<script src="./assets/js/yii.js"></script>
+		<script src="./assets/js/bootstrap.js"></script>
+		<script src="./assets/js/activeform.min.js"></script>
+		<script src="./assets/js/typeahead.bundle.min.js"></script>
+		<script src="./assets/js/typeahead-kv.min.js"></script>
+		<script src="./assets/js/handlebars.min.js"></script>
+		<script src="./assets/js/kv-widgets.min.js"></script>
+		<script src="./assets/js/yii.activeForm.js"></script>
+		<script src="./assets/js/custom.js"></script>
+		<script type="text/javascript">jQuery(function ($) {
+			var $el=jQuery("#buscador-avanzado .kv-hint-special");if($el.length){$el.each(function(){$(this).activeFieldHint()});}
+
+			db_data2().then( data => { console.log("ta_init A");
+				pidx={}; data.personas.forEach(p => pidx[p[0]]= p);
+				let opts= [
+					[{"tipo":"","descripcion":"VER TODOS LOS RESULTADOS"}],
+					data.proyectos.slice(2).map(r => ({tipo: 'Proyecto', id: r[0], descripcion: r[2]})),
+					data.productos.slice(2).map(r => ({tipo: 'Publicación', id: r[1], descripcion: r[5]})),
+
+					data.clasificaciones.slice(2).map(r => ({tipo: 'Tema', id: r[0], descripcion: r[1]+' '+r[2]})),
+					data.subclasificaciones.slice(2).map(r => ({tipo: 'Subtema', id: r[0], descripcion: r[2]+' '+r[3]})),
+
+					data.regiones_educativas.slice(2).map(r => ({tipo: 'Región', id: r[0], descripcion: r[1]+' '+r[2]})),
+					data.gestion.slice(2).map(r => ({tipo: 'Gestión', id: r[0], descripcion: r[1]+' '+r[2]})),
+					data.instituciones.slice(2).map(r => ({tipo: 'Institución', id: r[0], descripcion: r[1]+' '+r[2]})),
+
+					data.productos_tiene_autores.slice(2).map(r => { let p= pidx[r[2]]; return {tipo: 'Autor', id: r[2], descripcion: p ? p[1]+' '+p[2] : 'P'+r[2] } }),
+					data.proyectos_tiene_integrantes.slice(2).map(r => { let p= pidx[r[1]]; return {tipo: 'Integrante', id: r[1], descripcion: p ? p[1]+' '+p[2] : 'P'+r[1] } }),
+					data.proyectos.slice(2).map(r => { let p= pidx[r[1]]; return {tipo: 'Director', id: r[1], descripcion: p ? p[1]+' '+p[2] : 'P'+r[1] } }),
+				].flat();
+
+				var buscador_query_data_1 = new Bloodhound({"datumTokenizer":Bloodhound.tokenizers.obj.whitespace('descripcion'),"queryTokenizer":Bloodhound.tokenizers.whitespace, local: opts});
+				window.xsearchengine= buscador_query_data_1;
+
+				kvInitTA('buscador-query', typeahead_e325ca8b, [{"display":"descripcion","templates":{"suggestion":Handlebars.compile('<div><p><strong>{{tipo}}</strong> {{descripcion}}</p></div>')},"name":"buscador_query_data_1","source":buscador_query_data_1.ttAdapter()}]);
+				console.log("ta_init Z", opts)});
+
+			jQuery("#buscador-query").on('typeahead:select', function(ev, suggestion) { submitTypeAhead(ev, suggestion); showLoading() });
+			jQuery("#buscador-query").on('typeahead:render', function(ev, suggestion, flag, name) { saveCurrentQuery(ev); });
+			jQuery('#buscador-avanzado').yiiActiveForm([], []);
+
+
+			$('.custom-collapse').click(function (e) {
+				var collapse = $(this).attr('data-target');
+				var image = $(this).find('.icono-expand');
+
+				if ($(collapse).hasClass('in'))
+					image.attr('src', './img/ico_mas.png');
+				else
+					image.attr('src', './img/ico_menos.png');
+			});
+
+
+			var currentQuery = '';
+			function saveCurrentQuery(ev) {
+				currentQuery = ev.target.value;
+			}
+
+
+			function submitTypeAhead(ev, suggestion) {
+
+				var sfx= window.location.protocol=='file:' ? '.html' : '';
+				var redirect = './site/busquedaavanzada'+sfx+'?Buscador[query]=' + currentQuery;
+				console.log("TA REDIRECT",suggestion);
+
+				switch (suggestion.tipo) {
+					case 'Proyecto': redirect = './proyectos/index/' + suggestion.id + sfx; break;
+
+					case 'Publicación': redirect = './proyectos/index/' + suggestion.id + sfx; break;
+
+					case 'Director': redirect = './site/busquedaavanzada'+ sfx + '?Buscador[directores][]=' + suggestion.id; break;
+
+					case 'Autor': redirect = './site/busquedaavanzada'+ sfx + '?Buscador[autores][]=' + suggestion.id; break;
+
+					case 'Integrante': redirect = './site/busquedaavanzada'+ sfx + '?Buscador[integrantes][]=' + suggestion.id; break;
+
+					case 'Tema': redirect = './site/busquedaavanzada'+ sfx + '?Buscador[clasificacion][]=' + suggestion.id; break;
+
+					case 'Subtema': redirect = './site/busquedaavanzada'+ sfx + '?Buscador[sub_clasificacion][]=' + suggestion.id; break;
+
+					case 'Gestión': redirect = './site/busquedaavanzada'+ sfx + '?Buscador[tipo_de_gestion][]=' + suggestion.id; break;
+
+					case 'Región': redirect = './site/busquedaavanzada'+ sfx + '?Buscador[region][]=' + suggestion.id; break;
+
+					case 'Ciudades': redirect = './site/busquedaavanzada'+ sfx + '?Buscador[ciudad]=' + suggestion.id; break;
+				}
+
+				window.location = encodeURI(redirect);
+			}
+
+
+			/* To initialize BS3 tooltips set this below */
+			$(function () { 
+				$("[data-toggle='tooltip']").tooltip(); 
+			});;
+			/* To initialize BS3 popovers set this below */
+			$(function () { 
+				$("[data-toggle='popover']").popover(); 
+			});
+
+			$(function () {
+				if (window.location.protocol='file:') {
+					document.querySelectorAll('a').forEach(e => { let h= e.attributes.href?.nodeValue; if (h) { 
+						e.attributes.href.nodeValue= h.endsWith('/') ? h+'index.html' : h.replace(/^(.+?)(\?.*)?$/,'$1.html$2')
+					}})
+				}
+			});
+
+		});</script></body>
+</html>

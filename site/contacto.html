@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="../favicon.png" />
+		<title>Contacto</title>
+		<link href="../assets/css/bootstrap.css" rel="stylesheet">
+		<link href="../assets/css/activeform.min.css" rel="stylesheet">
+		<link href="../css/site.css" rel="stylesheet"></head>
+	<body>
+
+		<div class="wrap">
+			<nav id="w0" class="navbar-inverse navbar-fixed-top custom-navbar navbar"><div class="container-fluid"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w0-collapse"><span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span></button><a class="navbar-brand" href="../">
+							<img src="../img/logo_Flacso.png" class="logo-flacso"/>
+							<img src="../img/logo_unicef.png"/>
+							<img src="../img/logo_agencia_i_d_i.png"/>
+						</a></div><div id="w0-collapse" class="collapse navbar-collapse"><ul id="w1" class="navbar-nav navbar-right nav"><li class="showLoadingMenuItem"><a href="../">Inicio</a></li>
+								<li class="showLoadingMenuItem"><a href="../site/acercade">Acerca de</a></li>
+								<li class="showLoadingMenuItem"><a href="../actualizarinformacion/crear">Actualizar información</a></li>
+								<li class="showLoadingMenuItem"><a href="../preguntasfrecuentes/index">Preguntas frecuentes</a></li>
+								<li><a href="https://www.ecys.flacso.org.ar/ries" target="_blank">Sitio RIES</a></li>
+								<li class="showLoadingMenuItem active"><a href="contacto">Contacto</a></li>
+							</ul></div></div></nav>
+			<div id="page" class="container-fluid">
+
+				<br/>
+
+				<div class="row margin-buscador-avanzado">
+					<div class="col-md-12">
+						<h1 class="titulo">Contacto</h1>
+
+						<div class="row">
+							<div class="col-md-offset-3 col-md-6">
+
+								<form id="contact-form" class="form-vertical kv-form-bs3" action="contacto" method="post" role="form">
+									<input type="hidden" name="_csrf" value="YQ97ShoFTqrxfqtZc_1rH9tKRKo1qrHU7VQVSLqpX9JUTDo8XzF4naEtyCk2t1x8siQH5VD46K6vIVAgjvAshw==">
+									<div class="form-group highlight-addon field-contactform-name">
+
+
+										<input type="text" id="contactform-name" class="form-control" name="ContactForm[name]" autofocus placeholder="Nombre y apellido">
+
+										<div class="help-block help-block-error"></div>
+
+									</div>                    <div class="form-group highlight-addon field-contactform-email">
+
+
+										<input type="text" id="contactform-email" class="form-control" name="ContactForm[email]" placeholder="e-mail">
+
+										<div class="help-block help-block-error"></div>
+
+									</div>                    <div class="form-group highlight-addon field-contactform-body">
+
+
+										<textarea id="contactform-body" class="form-control" name="ContactForm[body]" rows="6" placeholder="Mensaje"></textarea>
+
+										<div class="help-block help-block-error"></div>
+
+									</div>                    <script src="https://www.google.com/recaptcha/api.js"></script><div class="g-recaptcha" data-sitekey="6LeFTDsUAAAAABJcICoTi0GY9fijQPf6K90UAQUF" data-theme="light"></div>
+									<div class="form-group text-right">
+										<button type="submit" class="btn btn-primary" name="contact-button">Enviar <i class="glyphicon glyphicon-menu-right"></i></button>                    </div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<br/>
+			</div>
+
+			<div id="loader"></div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="pull-left">
+				<img src="../img/logo_Flacso.png"/>
+				<img src="../img/logo_unicef.png"/>
+				<img src="../img/logo_agencia_i_d_i.png"/>
+				<small>2016-2024 Todos los derechos reservados.</small>
+				</p>
+			</div>
+		</footer>
+
+		<script src="../assets/js/jquery.js"></script>
+		<script src="../assets/js/yii.js"></script>
+		<script src="../assets/js/yii.activeForm.js"></script>
+		<script src="../assets/js/bootstrap.js"></script>
+		<script src="../assets/js/activeform.min.js"></script>
+		<script src="../assets/js/yii.validation.js"></script>
+		<script src="../assets/js/custom.js"></script>
+		<script>jQuery(function ($) {
+			var $el=jQuery("#contact-form .kv-hint-special");if($el.length){$el.each(function(){$(this).activeFieldHint()});}
+			jQuery('#contact-form').yiiActiveForm([{"id":"contactform-email","name":"email","container":".field-contactform-email","input":"#contactform-email","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"e-mail no es una dirección de correo válida.","enableIDN":false,"skipOnEmpty":1});}}], []);
+				/* To initialize BS3 tooltips set this below */
+				$(function () { 
+					$("[data-toggle='tooltip']").tooltip(); 
+				});;
+				/* To initialize BS3 popovers set this below */
+				$(function () { 
+					$("[data-toggle='popover']").popover(); 
+				});
+				
+				$(function () {
+					if (window.location.protocol='file:') {
+						document.querySelectorAll('a').forEach(e => { let h= e.attributes.href?.nodeValue; if (h) { 
+							e.attributes.href.nodeValue= h.endsWith('/') ? h+'index.html' : h.replace(/^(.+?)(\?.*)?$/,'$1.html$2')
+						}})
+					}
+				});
+
+
+			});</script></body>
+</html>

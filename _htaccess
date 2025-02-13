@@ -1,0 +1,7 @@
+Header add Cache-Control "max-age=3600, public"
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+RewriteRule ^$ site/index.html [NC,L]

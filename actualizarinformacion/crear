@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="UMi6MG8XjH4eY9r9Zi8-wnp3FBrq6vBWOU2Bemg9z1Bih95hOFXDKXcBo8wJS3mUSDkiUa_ZogYMf8spDme_Yg==">
+    <title>Actualizar información</title>
+        <link href="../assets/6b0fb210/css/bootstrap.css" rel="stylesheet">
+<link href="../assets/32b8f779/css/activeform.min.css" rel="stylesheet">
+<link href="../css/site.css" rel="stylesheet"></head>
+<body>
+
+<div class="wrap">
+    <nav id="w0" class="navbar-inverse navbar-fixed-top custom-navbar navbar"><div class="container-fluid"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w0-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="http://127.0.0.1:9080/vnueva/web/">
+            <img src="../img/logo_Flacso.png" class="logo-flacso"/>
+            <img src="../img/logo_unicef.png"/>
+            <img src="../img/logo_agencia_i_d_i.png"/>
+        </a></div><div id="w0-collapse" class="collapse navbar-collapse"><ul id="w1" class="navbar-nav navbar-right nav"><li class="showLoadingMenuItem"><a href="http://127.0.0.1:9080/vnueva/web/site/index">Inicio</a></li>
+<li class="showLoadingMenuItem"><a href="http://127.0.0.1:9080/vnueva/web/site/acercade">Acerca de</a></li>
+<li class="showLoadingMenuItem active"><a href="crear">Actualizar información</a></li>
+<li class="showLoadingMenuItem"><a href="http://127.0.0.1:9080/vnueva/web/preguntasfrecuentes/index">Preguntas frecuentes</a></li>
+<li><a href="https://www.ecys.flacso.org.ar/ries" target="_blank">Sitio RIES</a></li>
+<li class="showLoadingMenuItem"><a href="http://127.0.0.1:9080/vnueva/web/site/contacto">Contacto</a></li>
+<li class="showLoadingMenuItem"><a href="http://127.0.0.1:9080/vnueva/web/user/login">Login</a></li></ul></div></div></nav>
+    <div id="page" class="container-fluid">
+                
+<br/>
+
+<div class="row margin-buscador-avanzado">
+    <div class="col-md-12">
+        <h1 class="titulo">Actualizar información</h1>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p class="actualizar-informacion-descripcion">
+                A través de este formulario los equipos de investigación e investigadores/as individuales podrán realizar dos tipos de acciones: 
+                <br>
+                </p><div class="actualizar-informacion-bullet">
+                    a) Solicitar la inclusión de sus proyectos y productos a la Base de producción de conocimiento sobre Educación Secundaria en la Argentina
+                    <br>
+                    b) Informar y notificar cambios, solicitar actualizaciones (por ejemplo, agregar publicaciones a proyectos ya existentes) o la corrección de la información ya incluida en este sistema de consulta.
+                </div>
+                <br>
+                Solicitamos revisar previamente las características del universo del relevamiento y los criterios utilizados para la inclusión de proyectos, descargando el documento&nbsp;<a href="http://127.0.0.1:9080/uploads/criterios.pdf">"Criterios de inclusión"</a><br><br>
+                El equipo coordinador del proyecto se comunicará a la brevedad respondiendo al pedido realizado.            </div>
+            <div class="col-md-6">
+                
+
+                    <form id="actualizar-informacion-form" class="form-vertical kv-form-bs3" action="crear" method="post" role="form" enctype="multipart/form-data">
+<input type="hidden" name="_csrf" value="UMi6MG8XjH4eY9r9Zi8-wnp3FBrq6vBWOU2Bemg9z1Bih95hOFXDKXcBo8wJS3mUSDkiUa_ZogYMf8spDme_Yg==">
+                    <div class="form-group highlight-addon field-actualizarinformacion-nombre">
+
+
+<input type="text" id="actualizarinformacion-nombre" class="form-control" name="ActualizarInformacion[nombre]" autofocus placeholder="Nombre y apellido">
+
+<div class="help-block help-block-error"></div>
+
+</div>                    <div class="form-group highlight-addon field-actualizarinformacion-email">
+
+
+<input type="text" id="actualizarinformacion-email" class="form-control" name="ActualizarInformacion[email]" placeholder="e-mail">
+
+<div class="help-block help-block-error"></div>
+
+</div>                    <div class="form-group highlight-addon field-actualizarinformacion-observaciones">
+
+
+<textarea id="actualizarinformacion-observaciones" class="form-control" name="ActualizarInformacion[observaciones]" rows="6" placeholder="Observaciones"></textarea>
+
+<div class="help-block help-block-error"></div>
+
+</div>                    <div class="form-group highlight-addon field-actualizarinformacion-descripcion">
+
+
+<textarea id="actualizarinformacion-descripcion" class="form-control" name="ActualizarInformacion[descripcion]" rows="6" placeholder="Descripción"></textarea>
+
+<div class="help-block help-block-error"></div>
+
+</div>                    <div class="form-group highlight-addon field-actualizarinformacion-archivo_adjunto">
+
+
+<input type="hidden" name="ActualizarInformacion[archivo_adjunto]" value=""><input type="file" id="actualizarinformacion-archivo_adjunto" name="ActualizarInformacion[archivo_adjunto]">
+
+<div class="help-block help-block-error"></div>
+
+</div>                    <script src="https://www.google.com/recaptcha/api.js"></script><div class="g-recaptcha" data-sitekey="6LeFTDsUAAAAABJcICoTi0GY9fijQPf6K90UAQUF" data-theme="light"></div>
+                    <div class="form-group text-right">
+                        <button type="submit" class="btn btn-primary showLoading" name="contact-button">Enviar <i class="glyphicon glyphicon-menu-right"></i></button>                    </div>
+
+                    </form>
+                            </div>
+        </div>
+    </div>
+</div>
+
+<br/>    </div>
+
+    <div id="loader"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">
+            <img src="../img/logo_Flacso.png"/>
+            <img src="../img/logo_unicef.png"/>
+            <img src="../img/logo_agencia_i_d_i.png"/>
+            <small>2016-2024 Todos los derechos reservados.</small>
+        </p>
+    </div>
+</footer>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-90941707-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<script src="../assets/76c1b0b4/jquery.js"></script>
+<script src="../assets/4343d066/yii.js"></script>
+<script src="../assets/4343d066/yii.activeForm.js"></script>
+<script src="../assets/6b0fb210/js/bootstrap.js"></script>
+<script src="../assets/32b8f779/js/activeform.min.js"></script>
+<script src="../assets/4343d066/yii.validation.js"></script>
+<script src="../js/custom.js"></script>
+<script>jQuery(function ($) {
+var $el=jQuery("#actualizar-informacion-form .kv-hint-special");if($el.length){$el.each(function(){$(this).activeFieldHint()});}
+jQuery('#actualizar-informacion-form').yiiActiveForm([{"id":"actualizarinformacion-nombre","name":"nombre","container":".field-actualizarinformacion-nombre","input":"#actualizarinformacion-nombre","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Nombre debe ser una cadena de caracteres.","max":45,"tooLong":"Nombre debería contener como máximo 45 letras.","skipOnEmpty":1});}},{"id":"actualizarinformacion-email","name":"email","container":".field-actualizarinformacion-email","input":"#actualizarinformacion-email","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"e-mail debe ser una cadena de caracteres.","max":45,"tooLong":"e-mail debería contener como máximo 45 letras.","skipOnEmpty":1});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"e-mail no es una dirección de correo válida.","enableIDN":false,"skipOnEmpty":1});}},{"id":"actualizarinformacion-observaciones","name":"observaciones","container":".field-actualizarinformacion-observaciones","input":"#actualizarinformacion-observaciones","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Observaciones debe ser una cadena de caracteres.","skipOnEmpty":1});}},{"id":"actualizarinformacion-descripcion","name":"descripcion","container":".field-actualizarinformacion-descripcion","input":"#actualizarinformacion-descripcion","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Descripcion debe ser una cadena de caracteres.","skipOnEmpty":1});}},{"id":"actualizarinformacion-archivo_adjunto","name":"archivo_adjunto","container":".field-actualizarinformacion-archivo_adjunto","input":"#actualizarinformacion-archivo_adjunto","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Adjunto debe ser una cadena de caracteres.","max":255,"tooLong":"Adjunto debería contener como máximo 255 letras.","skipOnEmpty":1});yii.validation.file(attribute, messages, {"message":"Falló la subida del archivo.","skipOnEmpty":true,"mimeTypes":[],"wrongMimeType":"Sólo se aceptan archivos con los siguientes tipos MIME: .","extensions":[],"wrongExtension":"Sólo se aceptan archivos con las siguientes extensiones: ","maxFiles":1,"tooMany":"Puedes subir como máximo 1 archivo."});}}], []);
+/* To initialize BS3 tooltips set this below */
+$(function () { 
+    $("[data-toggle='tooltip']").tooltip(); 
+});;
+/* To initialize BS3 popovers set this below */
+$(function () { 
+    $("[data-toggle='popover']").popover(); 
+});
+});</script></body>
+</html>
